@@ -1,0 +1,12 @@
+@import './helpers/placeholders';
+
+
+input.form-control {
+  @extend %border-radius-20;
+  @extend %shadow-filled-container;
+}
+
+input.lg {
+  height: 30px;
+  font-size: 10px;
+}

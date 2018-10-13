@@ -1,0 +1,16 @@
+// Typography
+%font-regular { font-family: 'Nunito', sans-serif; }
+
+%font-bold { font-family: 'Nunito-Bold', sans-serif; }
+
+%font-light { font-family: 'Nunito-Light' , sans-serif; }
+
+
+
+// Border
+%border-radius-20 { border-radius: 20px; }
+
+%shadow-filled-container {
+  border: 0 transparentize(gray, 0.9);
+  box-shadow: 0 2px 5px 1px #80808024;
+}

@@ -1,0 +1,14 @@
+$types: Regular, Light, Bold;
+
+
+@each $type in $types {
+  $name: if($type == Bold, SemiBold, $type);
+
+  @font-face {
+    font-family: "Nunito-#{$type}";
+    src: url("/src/assets/fonts/Nunito/Nunito-#{$name}.ttf");
+  }
+}
+
+
+* { font-family: 'Nunito-Regular', sans-serif; }

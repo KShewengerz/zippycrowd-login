@@ -1,0 +1,6 @@
+// Media Queries
+@mixin media-query($max-width: auto, $min-width: auto) {
+  @media screen and (max-width: $max-width) and (min-width: $min-width) {
+    @content;
+  }
+}
