@@ -14,9 +14,9 @@ li {
   }
 }
 
-button:first-child { border-color: $gray; }
-
 button {
   font-family: $font-nunito-bold;;
   font-size: 6px !important;
+
+  &:first-child { border-color: $gray; }
 }
