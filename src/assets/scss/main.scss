@@ -9,3 +9,9 @@
 // Helpers
 @import './helpers/mixins';
 @import './helpers/placeholders';
+
+
+body {
+  background: $blue-smoke;
+}
+

@@ -1,0 +1,15 @@
+@import 'main';
+
+
+.container { height: 90vh; }
+
+.headline {
+  h2 { font-family: 'Nunito-Bold', sans-serif; }
+
+  p {
+    font-size: 14px;
+    border-left: 1px solid $teal;
+    margin-left: 3px;
+  }
+}
+
