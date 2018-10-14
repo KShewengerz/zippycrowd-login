@@ -3,11 +3,3 @@
 
 
 .btn { @extend %border-radius-20; }
-
-$button-types: (primary: $purple, secondary: $dark-purple);
-@each $type, $color in $button-types {
-  .btn-#{$type} {
-    background-color: $color;
-    border-color: $color;
-  }
-}

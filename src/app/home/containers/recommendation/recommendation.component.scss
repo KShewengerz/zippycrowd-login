@@ -3,13 +3,33 @@
 
 .container { height: 90vh; }
 
+
 .headline {
-  h2 { font-family: 'Nunito-Bold', sans-serif; }
+  h3 { font-family: 'Nunito-Bold', sans-serif; }
 
   p {
     font-size: 14px;
-    border-left: 1px solid $teal;
+    border-color: $teal !important;
     margin-left: 3px;
+  }
+}
+
+.media {
+  width: 200px;
+  max-width: 500px;
+
+  span {
+    border-radius: 20px;
+    height: 30px;
+
+    img { width: 20px; }
+  }
+
+
+  &-body {
+    border-radius: 15px;
+    font-size: 9px;
+    color: $light-purple;
   }
 }
 

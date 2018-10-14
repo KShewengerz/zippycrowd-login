@@ -1,14 +1,33 @@
 <div class="container d-flex align-items-center justify-content-center">
   <div class="row">
-    <div class="col-md-6 offset-md-3">
+    <div class="col">
 
       <!-- Headline -->
       <div class="headline">
-        <h2>Recommendations.</h2>
-        <p>
-          <span class="pl-2">People you need from people you trust.</span>
-        </p>
-      </div>
+        <h3>Recommendations.</h3>
+        <p class="border-left">
+          <span class="pl-2 text-muted">People you need from people you trust.</span>
+        </p><!-- END .border-left -->
+      </div><!-- END .headline -->
+
+      <!-- Bird Icon Recommendation Advice -->
+      <div class="row my-4">
+        <div class="col-md-6">
+
+          <div class="media align-items-end">
+            <span class="shadow-sm mr-2 d-flex px-1 py-1">
+              <img src="assets/images/owl.png"
+                   alt="bird"
+                   class="align-items-end bg-white rounded-circle">
+            </span>
+
+            <div class="media-body shadow-sm bg-white">
+              <p class="mb-0 px-3 py-2 font-weight-bold">Ask friends to recommend. Free. With no middleman.</p>
+            </div><!-- END .media-body -->
+          </div><!-- END .media -->
+
+        </div><!-- END .col-md-6 -->
+      </div><!-- END .row -->
 
       <!-- Recommendation Form -->
       <app-recommendation-form></app-recommendation-form>

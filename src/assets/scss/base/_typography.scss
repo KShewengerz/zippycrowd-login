@@ -1,6 +1,7 @@
 $types: Regular, Light, Bold;
 
 
+/* Font Family */
 @each $type in $types {
   $name: if($type == Bold, SemiBold, $type);
 
@@ -10,5 +11,29 @@ $types: Regular, Light, Bold;
   }
 }
 
-
 * { font-family: 'Nunito-Regular', sans-serif; }
+
+
+/* Responsive Typography */
+html {
+  font-size: 1rem;
+}
+
+@include media-breakpoint-up(s) {
+  html {
+    font-size: 1.0rem;
+  }
+}
+
+
+@include media-breakpoint-up(sm) {
+  html {
+    font-size: 1.2rem;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  html {
+    font-size: 1.4rem;
+  }
+}
