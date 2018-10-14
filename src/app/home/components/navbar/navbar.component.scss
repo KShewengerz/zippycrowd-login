@@ -1,4 +1,22 @@
 @import 'main';
 
 
-li > a.nav-link { font-size: 12px; }
+li {
+  a.nav-link { font-size: 12px; }
+
+  span { font-size: 9px; }
+
+  .toggler-icon-container {
+    cursor: pointer;
+    background-color: #f0f5f9;
+    border-radius: 20px;
+    font-size: 9px;
+  }
+}
+
+button:first-child { border-color: $gray; }
+
+button {
+  font-family: $font-nunito-bold;;
+  font-size: 6px !important;
+}

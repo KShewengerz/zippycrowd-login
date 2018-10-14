@@ -5,12 +5,13 @@
 input.form-control {
   @extend %border-radius-35;
   @extend %shadow-filled-container;
+
+  &:focus { @extend %box-shadow-default-gray; }
+
+  &.lg {
+    font-size: 10px;
+
+    @extend %height-30;
+  }
 }
 
-input.form-control:focus { @extend %box-shadow-default-gray; }
-
-input.lg {
-  font-size: 10px;
-
-  @extend %height-30;
-}
