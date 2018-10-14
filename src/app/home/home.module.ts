@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
+import { UiSwitchModule } from 'ngx-ui-switch';
+
 // Containers
 import { HomeComponent } from '@app/home/containers/home/home.component';
 
@@ -18,7 +20,12 @@ import { RecommendationComponent } from './containers/recommendation/recommendat
     RecommendationComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    UiSwitchModule.forRoot({
+      size: 'small',
+      switchColor: '#604c8d',
+      color: 'whitesmoke'
+    })
   ],
   exports: [
     HomeComponent

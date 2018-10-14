@@ -2,4 +2,11 @@
 @import './helpers/placeholders';
 
 
-.btn { @extend %border-radius-20; }
+.btn { @extend %border-radius-35; }
+
+.btn:focus { @extend %box-shadow-default-gray;  }
+
+.btn.small {
+  font-size: 10px;
+  @extend %height-30;
+}

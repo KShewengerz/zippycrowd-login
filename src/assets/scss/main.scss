@@ -1,13 +1,14 @@
-// Bootstrap
-@import '../node_modules/bootstrap/scss/bootstrap.scss';
+// Bootstrap Libraries
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+
+
+// Ngx UI Switch
+@import '~ngx-ui-switch/ui-switch.component.scss';
 
 // Base
 @import './base/colors';
 @import './base/typography';
-
-// Components
-@import './components/buttons';
-@import './components/inputs';
 
 // Helpers
 @import './helpers/mixins';
@@ -16,8 +17,13 @@
 // Themes
 @import './themes/theme';
 
+// Bootstrap
+@import '~bootstrap/scss/bootstrap.scss';
 
-body {
-  background: $blue-smoke;
-}
+// Components
+@import './components/buttons';
+@import './components/inputs';
+@import './components/custom';
+
+
 

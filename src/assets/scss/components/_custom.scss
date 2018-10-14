@@ -1,0 +1,21 @@
+body {
+  background: $blue-smoke;
+}
+
+// Toggle Switch
+input + ui-switch {
+  position: absolute;
+  top: 4px;
+  right: 15px;
+}
+
+.switch.switch-small {
+  height: 14px;
+  min-width: 25px;
+}
+
+.switch.switch-small small {
+  width: 15px;
+  height: 15px;
+  right: calc(100% - 15px);
+}

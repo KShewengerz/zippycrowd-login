@@ -7,10 +7,17 @@
 
 
 
-// Border
-%border-radius-20 { border-radius: 20px; }
+// Border and Box Shadow
+%border-radius-35 { border-radius: 35px; }
 
 %shadow-filled-container {
   border: 0 transparentize(gray, 0.9);
   box-shadow: 0 2px 5px 1px #80808024;
 }
+
+%box-shadow-default-gray {
+  box-shadow: 1px 2px 7px 0 #8080804d;
+}
+
+// Height
+%height-30 { height: 30px; }

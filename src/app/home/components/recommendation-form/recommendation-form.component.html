@@ -1,3 +1,25 @@
-<p>
-  recommendation-form works!
-</p>
+<form novalidate>
+
+  <!-- Looking for -->
+  <div class="form-group mb-2">
+    <input type="text"
+           class="form-control lg"
+           placeholder="I'm looking for...">
+  </div><!-- END .form-group -->
+
+  <!-- Location -->
+  <div class="form-group position-relative">
+    <input type="text"
+           class="form-control lg"
+           placeholder="Location">
+    <ui-switch></ui-switch>
+  </div><!-- END .form-group -->
+
+  <button class="btn btn-primary small float-right d-flex">
+    <img src="assets/images/recommendation.png"
+         alt=""
+         class="pr-1 align-self-center">
+    Ask for Recs
+  </button>
+
+</form>
