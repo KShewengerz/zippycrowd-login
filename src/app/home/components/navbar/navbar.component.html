@@ -15,31 +15,28 @@
     <!-- Menu -->
     <ul class="navbar-nav ml-auto my-1">
 
-      <li class="nav-item px-2">
-        <span>New to ZippyCrowd?</span>
-      </li>
+      <li *ngFor="let item of menu"
+          class="nav-item"
+          [ngClass]="(item.label === 'or') ? 'px-1': 'px-2'">
 
-      <li class="nav-item px-2">
-        <button class="btn btn-outline-primary">GET STARTED</button>
-      </li>
+        <div [ngSwitch]="item.type">
 
-      <li class="nav-item px-1">
-        <span>or</span>
-      </li>
+          <span *ngSwitchCase="'span'">{{ item.label }}</span>
 
-      <li class="nav-item px-2">
-        <button class="btn btn-primary">LOG IN</button>
-      </li>
+          <button *ngSwitchCase="'button'"
+                  class="btn"
+                  [ngClass]="(item.class === 'outline') ? 'btn-outline-primary': 'btn-primary'">{{ item.label }}</button>
 
-      <li class="nav-item px-2">
-        <span class="toggler-icon-container align-middle px-1 py-1">
-          <span class="navbar-toggler-icon"></span>
-        </span>
+          <span *ngSwitchCase="'custom'"
+                class="toggler-icon-container align-middle px-1 py-1">
+            <span class="navbar-toggler-icon"></span>
+          </span>
+        </div>
+
       </li>
 
     </ul>
 
   </div><!-- END .collapse -->
-
 </nav>
 
