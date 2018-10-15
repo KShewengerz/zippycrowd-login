@@ -1,16 +1,32 @@
 @import 'main';
 
 
+.toggler {
+  background-color: #f0f5f9;
+  border-color: #f0f5f9 !important;
+  font-size: 9px !important;
+  border-radius: 20px;
+}
+
+.navbar-toggler {
+  @extend .toggler;
+
+  width: 23px;
+  padding: 4px;
+  margin: 8px 0;
+
+  &:focus { outline: unset; }
+}
+
 li {
   a.nav-link { font-size: 12px; }
 
   span { font-size: 9px; }
 
   .toggler-icon-container {
+    @extend .toggler;
+
     cursor: pointer;
-    background-color: #f0f5f9;
-    border-radius: 20px;
-    font-size: 9px;
   }
 }
 
