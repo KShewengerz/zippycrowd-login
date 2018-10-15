@@ -3,17 +3,17 @@
   <!-- Collapse Bar Button -->
   <button class="navbar-toggler ml-auto"
           type="button"
-          data-toggle="collapse"
-          data-target="#nav-content">
+          (click)="isCollapsed = !isCollapsed">
     <span class="navbar-toggler-icon"></span>
   </button>
 
   <!-- Nav Content -->
   <div class="collapse navbar-collapse"
-       id="nav-content">
+       id="nav-content"
+       [collapse]="isCollapsed">
 
     <!-- Menu -->
-    <ul class="navbar-nav ml-auto my-1">
+    <ul class="navbar-nav ml-sm-auto my-sm-1 d-flex flex-row justify-content-end">
 
       <li *ngFor="let item of menu"
           class="nav-item"

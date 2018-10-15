@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { UiSwitchModule } from 'ngx-ui-switch';
+import { CollapseModule } from 'ngx-bootstrap/collapse';
 
 // Containers
 import { HomeComponent } from '@app/home/containers/home/home.component';
@@ -21,6 +22,7 @@ import { RecommendationComponent } from './containers/recommendation/recommendat
   ],
   imports: [
     CommonModule,
+    CollapseModule.forRoot(),
     UiSwitchModule.forRoot({
       size: 'small',
       switchColor: '#604c8d',

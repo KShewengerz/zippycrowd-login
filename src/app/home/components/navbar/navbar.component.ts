@@ -12,6 +12,7 @@ import { listItems } from './navbar-template-helpers';
 })
 export class NavbarComponent implements OnInit {
   
+  isCollapsed: boolean = true;
   menu: ListItem[] = listItems;
   
   constructor() { }

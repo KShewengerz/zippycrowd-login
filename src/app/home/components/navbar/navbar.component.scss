@@ -26,7 +26,21 @@ li {
   .toggler-icon-container {
     @extend .toggler;
 
+    position: relative;
+    top: 4px;
     cursor: pointer;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  ul {
+    margin-right: -8px;
+    margin-bottom: 7px !important;
+
+    li:last-child { display: none; }
+
+    li:nth-child(3) { margin-right: 0 !important; }
   }
 }
 
