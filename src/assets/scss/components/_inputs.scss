@@ -8,8 +8,8 @@ input.form-control {
   &:focus { @extend %box-shadow-default-gray; }
 
   &.lg {
-    @extend %height-30;
-    font-size: 10px;
+    @extend %height-70;
+    font-size: 17px;
   }
 }
 
@@ -22,7 +22,7 @@ input.form-control {
   input { box-shadow: unset; }
 
   .input-group-text {
-    @extend %height-30;
+    @extend %height-70;
     @extend %border-radius-35;
     @extend %transparent-border;
   }

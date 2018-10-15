@@ -4,32 +4,33 @@
 .toggler {
   background-color: #f0f5f9;
   border-color: #f0f5f9 !important;
-  font-size: 9px !important;
-  border-radius: 20px;
+  font-size: 1.1em !important;
+  border-radius: 50%;
+  height: 37px;
 }
 
 .navbar-toggler {
-  @extend .toggler;
-
-  width: 23px;
-  padding: 4px;
-  margin: 8px 0;
+  border: unset;
 
   &:focus { outline: unset; }
+
+  .toggler-icon-container {
+    width: 35px;
+
+    .navbar-toggler-icon { font-size: 1.3em; }
+  }
 }
 
 li {
   a.nav-link { font-size: 12px; }
 
-  span { font-size: 9px; }
+  span { font-size: 0.7em; }
 
-  .toggler-icon-container {
-    @extend .toggler;
+  .toggler-icon-container { width: 37px; }
+}
 
-    position: relative;
-    top: 4px;
-    cursor: pointer;
-  }
+.toggler-icon-container {
+  @extend .toggler;
 }
 
 
@@ -46,7 +47,7 @@ li {
 
 button {
   font-family: $font-nunito-bold;;
-  font-size: 6px !important;
+  font-size: 0.6em !important;
 
   &:first-child { border-color: $gray; }
 }

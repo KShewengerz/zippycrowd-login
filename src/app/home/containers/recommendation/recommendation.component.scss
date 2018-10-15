@@ -4,30 +4,35 @@
 
 
 .headline {
-  h3 { font-family: $font-nunito-bold; }
+  h1 {
+    font-family: $font-nunito-bold;
+    font-weight: bolder;
+    font-size: 3.0em;
+  }
 
   p {
-    font-size: 14px;
-    border-color: $teal !important;
+    font-size: 1.3em;
+    border-left: 3px solid $teal !important;
     margin-left: 3px;
   }
 }
 
 .media {
-  width: 200px;
-  max-width: 500px;
+  width: 320px;
+  max-width: 600px;
 
   span {
     border-radius: 20px;
-    height: 30px;
+    height: 40px;
+    width: 40px;
 
-    img { width: 20px; }
+    img { width: 30px; }
   }
 
 
   &-body {
     border-radius: 15px;
-    font-size: 9px;
+    font-size: 18px;
     color: $light-purple;
   }
 }
