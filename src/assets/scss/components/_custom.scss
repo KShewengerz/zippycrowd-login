@@ -3,10 +3,12 @@ body {
 }
 
 // Toggle Switch
-input + ui-switch {
-  position: absolute;
-  top: 4px;
-  right: 15px;
+.toggle-switch {
+  small {
+    font-size: 8px;
+    color: $light-purple;
+    font-weight: bolder;
+  }
 }
 
 .switch.switch-small {

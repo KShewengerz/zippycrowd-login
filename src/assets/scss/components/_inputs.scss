@@ -3,15 +3,30 @@
 
 
 input.form-control {
-  @extend %border-radius-35;
-  @extend %shadow-filled-container;
+  @extend %shadow-bordered-input;
 
   &:focus { @extend %box-shadow-default-gray; }
 
   &.lg {
-    font-size: 10px;
-
     @extend %height-30;
+    font-size: 10px;
   }
 }
+
+.input-group {
+
+  @extend %shadow-bordered-input;
+
+  input:focus { box-shadow: unset; }
+
+  input { box-shadow: unset; }
+
+  .input-group-text {
+    @extend %height-30;
+    @extend %border-radius-35;
+    @extend %transparent-border;
+  }
+}
+
+
 

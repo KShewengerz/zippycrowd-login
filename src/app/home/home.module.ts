@@ -24,7 +24,7 @@ import { RecommendationComponent } from './containers/recommendation/recommendat
     UiSwitchModule.forRoot({
       size: 'small',
       switchColor: '#604c8d',
-      color: 'whitesmoke'
+      color: '#8576aa7a'
     })
   ],
   exports: [

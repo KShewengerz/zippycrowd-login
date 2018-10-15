@@ -6,17 +6,20 @@
 %font-light { font-family: 'Nunito-Light' , sans-serif; }
 
 
-
 // Border and Box Shadow
 %border-radius-35 { border-radius: 35px; }
 
-%shadow-filled-container {
-  border: 0 transparentize(gray, 0.9);
-  box-shadow: 0 2px 5px 1px #80808024;
-}
+%transparent-border { border: 0 transparentize(gray, 0.9); }
 
 %box-shadow-default-gray {
   box-shadow: 1px 2px 7px 0 #8080804d;
+}
+
+%shadow-bordered-input {
+  @extend %border-radius-35;
+  @extend %transparent-border;
+
+  box-shadow: 0 2px 5px 1px #80808024;
 }
 
 // Height

@@ -1,23 +1,30 @@
 <form novalidate>
 
-  <!-- Looking for -->
-  <div class="form-group mb-2">
+  <!-- Name -->
+  <div class="mb-2">
     <input type="text"
            class="form-control lg"
            placeholder="I'm looking for...">
-  </div><!-- END .form-group -->
+  </div><!-- END .mb-2 -->
 
   <!-- Location -->
-  <div class="form-group position-relative">
+  <div class="input-group mb-3">
     <input type="text"
            class="form-control lg"
            placeholder="Location">
-    <ui-switch></ui-switch>
-  </div><!-- END .form-group -->
+
+    <div class="input-group-append">
+      <div class="input-group-text bg-white pt-sm-2 pt-2 toggle-switch">
+        <small class="pr-2">Any location</small>
+        <ui-switch></ui-switch>
+      </div><!-- END .input-group-text -->
+    </div><!-- END .input-group-append -->
+
+  </div><!-- END .input-group -->
 
   <button class="btn btn-primary small float-right d-flex">
     <img src="assets/images/recommendation.png"
-         alt=""
+         alt="recommendation"
          class="pr-1 align-self-center">
     Ask for Recs
   </button>
