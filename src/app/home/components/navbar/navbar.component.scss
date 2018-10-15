@@ -33,11 +33,14 @@ li {
   @extend .toggler;
 }
 
+@media screen and (max-width: 767px) {
+  .navbar-toggler {
+    position: relative;
+    top: 5px;
+  }
 
-@media screen and (max-width: 768px) {
   ul {
-    margin-right: -8px;
-    margin-bottom: 7px !important;
+    margin-right: 3px;
 
     li:last-child { display: none; }
 

@@ -4,7 +4,7 @@
   <button class="navbar-toggler ml-auto mb-2"
           type="button"
           (click)="isCollapsed = !isCollapsed">
-    <span class="toggler-icon-container d-flex px-1 py-1">
+    <span class="toggler-icon-container d-flex px-1 py-1 flex-row justify-content-center">
       <span class="navbar-toggler-icon align-self-center"></span>
     </span>
   </button>
@@ -23,7 +23,8 @@
 
         <div [ngSwitch]="item.type">
 
-          <span *ngSwitchCase="'span'">{{ item.label }}</span>
+          <span *ngSwitchCase="'span'"
+                [ngClass]="{'d-none d-md-block mt-1': item.label != 'or'}">{{ item.label }}</span>
 
           <button *ngSwitchCase="'button'"
                   class="btn"
