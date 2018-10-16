@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild, TemplateRef } from '@angular/core';
+import { Component, OnInit, TemplateRef } from '@angular/core';
 
 import { BsModalService } from 'ngx-bootstrap/modal';
 
@@ -26,7 +26,6 @@ export class RecommendationFormComponent implements OnInit {
   save({name, location}, template: TemplateRef<any>): void {
     location = location ? location : 'Any locations';
   
-    console.log(template);
     this.modalService.show(template);
   }
 
