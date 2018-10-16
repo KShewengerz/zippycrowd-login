@@ -26,14 +26,14 @@ li {
 
   span { font-size: 0.7em; }
 
-  .toggler-icon-container { width: 37px; }
+  .toggler-icon-container { width: 34px; }
 }
 
 .toggler-icon-container {
   @extend .toggler;
 }
 
-@media screen and (max-width: 767px) {
+@media (max-width: 767px) {
   .navbar-toggler {
     position: relative;
     top: 5px;

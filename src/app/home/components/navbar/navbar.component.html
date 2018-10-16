@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm px-10 py-3">
 
   <!-- Collapse Bar Button -->
-  <button class="navbar-toggler ml-auto mb-2"
+  <button class="navbar-toggler ml-auto mb-3"
           type="button"
           (click)="isCollapsed = !isCollapsed">
     <span class="toggler-icon-container d-flex px-1 py-1 flex-row justify-content-center">
@@ -31,8 +31,8 @@
                   [ngClass]="(item.class === 'outline') ? 'btn-outline-primary': 'btn-primary'">{{ item.label }}</button>
 
           <span *ngSwitchCase="'custom'"
-                class="toggler-icon-container d-flex px-1 py-1">
-            <span class="navbar-toggler-icon justify-content-center"></span>
+                class="toggler-icon-container d-flex flex-column align-items-center justify-content-center px-1 py-1">
+            <span class="navbar-toggler-icon"></span>
           </span>
         </div>
 

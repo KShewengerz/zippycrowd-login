@@ -2,10 +2,26 @@
 button {
   padding-top: 0.7rem;
   padding-bottom: 0.7rem;
-  font-size: 18px;
+  font-size: 1.0em;
 
   img {
-    width: 37px;
+    width: 1.5em;
     max-width: 100%;
   }
+}
+
+@media (max-width: 768px) {
+  input.form-control, .input-group { height: 50px; }
+
+  //.switch.switch-small {
+  //  height: 17px !important;
+  //  min-width: 20px !important;
+  //}
+  //
+  //.switch.switch-small small {
+  //  width: 18px !important;
+  //  height: 18px !important;
+  //  right: calc(100% - 18px) !important;
+  //}
+
 }

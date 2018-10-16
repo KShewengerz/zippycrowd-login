@@ -18,6 +18,23 @@
 }
 
 .media {
+
+  @media (max-width: 575px) {
+    & {
+      width: 200px !important;
+    }
+
+    span {
+      height: unset !important;
+      width: unset !important;
+
+      img {
+        width: 20px !important;
+        height: 20px;
+      }
+    }
+  }
+
   width: 320px;
   max-width: 600px;
 
@@ -32,7 +49,7 @@
 
   &-body {
     border-radius: 15px;
-    font-size: 18px;
+    font-size: 0.9em;
     color: $light-purple;
   }
 }
