@@ -4,7 +4,7 @@ import { HomeModule } from '@app/home/home.module';
 
 import { Observable, of } from 'rxjs';
 
-import { Recommendation } from '@app/home/containers/recommendation/recommendation.interface';
+import { Recommendation } from '@app/home/models/recommendation.interface';
 
 
 @Injectable({

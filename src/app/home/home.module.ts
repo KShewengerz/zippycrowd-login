@@ -1,8 +1,9 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 
 import { UiSwitchModule } from 'ngx-ui-switch';
-import { CollapseModule } from 'ngx-bootstrap/collapse';
+import { CollapseModule, ModalModule } from 'ngx-bootstrap';
 
 // Containers
 import { HomeComponent } from '@app/home/containers/home/home.component';
@@ -22,7 +23,9 @@ import { RecommendationComponent } from './containers/recommendation/recommendat
   ],
   imports: [
     CommonModule,
+    FormsModule,
     CollapseModule.forRoot(),
+    ModalModule.forRoot(),
     UiSwitchModule.forRoot({
       size: 'small',
       switchColor: '#604c8d',

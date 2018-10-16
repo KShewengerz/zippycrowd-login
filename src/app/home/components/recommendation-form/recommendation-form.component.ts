@@ -1,4 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild, TemplateRef } from '@angular/core';
+
+import { BsModalService } from 'ngx-bootstrap/modal';
+
+import { Recommendation } from '@app/home/models/recommendation.interface';
 
 
 @Component({
@@ -8,8 +12,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RecommendationFormComponent implements OnInit {
 
-  constructor() { }
+  recommendation: Recommendation = {
+    name: null,
+    location: null
+  };
+  
+  isAllLocations: boolean = false;
+  
+  constructor(private modalService: BsModalService) { }
 
   ngOnInit() {}
+  
+  save({name, location}, template: TemplateRef<any>): void {
+    location = location ? location : 'Any locations';
+  
+    console.log(template);
+    this.modalService.show(template);
+  }
 
 }

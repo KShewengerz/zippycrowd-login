@@ -1,28 +1,40 @@
-<form novalidate>
+<form #form="ngForm"
+      (submit)="save(form.value, template)"
+      novalidate>
 
   <!-- Name -->
   <div class="mb-3">
     <input type="text"
            class="form-control lg pl-4"
-           placeholder="I'm looking for...">
+           placeholder="I'm looking for..."
+           name="name"
+           #name="ngModel"
+           [(ngModel)]="recommendation.name"
+           required>
   </div><!-- END .mb-2 -->
 
   <!-- Location -->
   <div class="input-group mb-4">
     <input type="text"
            class="form-control lg pl-4"
-           placeholder="Location">
+           placeholder="Location"
+           name="location"
+           required
+           #location="ngModel"
+           [(ngModel)]="recommendation.location"
+           [disabled]="isAllLocations">
 
     <div class="input-group-append">
       <div class="input-group-text bg-white pt-sm-2 pt-2 pr-4 toggle-switch">
         <small class="pr-3">Any location</small>
-        <ui-switch></ui-switch>
+        <ui-switch (change)="isAllLocations = $event"></ui-switch>
       </div><!-- END .input-group-text -->
     </div><!-- END .input-group-append -->
 
   </div><!-- END .input-group -->
 
-  <button class="btn btn-primary float-right d-flex px-4">
+  <button class="btn btn-primary float-right d-flex px-4"
+          [disabled]="form.invalid">
     <img src="assets/images/recommendation.png"
          alt="recommendation"
          class="pr-2 align-self-center">
@@ -30,3 +42,11 @@
   </button>
 
 </form>
+
+
+<ng-template #template>
+  <div class="modal-body text-center">
+    <h1 class="text-success">Success!</h1>
+    <p>Recommendation is submitted! Thank you for your cooperation.</p>
+  </div>
+</ng-template>
