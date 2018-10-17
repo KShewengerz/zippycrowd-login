@@ -8,10 +8,10 @@ import { Recommendation } from '@app/home/models/recommendation.interface';
 
 
 /**
- * A service that is responsible for
+ * A service that is responsible for fetching recommendation suggestions and submitting a recommendation.
  */
 @Injectable({
-  providedIn: HomeModule
+  providedIn: 'root'
 })
 export class RecommendationService {
 
@@ -19,8 +19,8 @@ export class RecommendationService {
   
   
   /**
-   * An
-   * @returns an
+   * Fetches random suggestions for recommendation field
+   * @returns an array of strings
    */
   fetchSuggestions(): Observable<string[]> {
     const list = ['Hairdresser', 'Plumber', 'UX Designer', 'Frontend Developer', 'Digital Marketer', 'Babysitter'];
@@ -29,7 +29,7 @@ export class RecommendationService {
   }
   
   /**
-   * An
+   * Handles the submit functionality of recommendation form
    * @param recommendation sample
    * @returns  a recommendation and status object
    */
