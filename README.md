@@ -18,6 +18,9 @@ An Angular 6 application that demos ZippyCrowd sample Login UI Screen
 
 #### Live App Documentation
 ```
+    NOTE: Be sure you have http-server installed globally on you end, if not run this:
+    $ npm install -g http-server
+  
     $ npm run compodoc
     $ npm run live:documentation
     
