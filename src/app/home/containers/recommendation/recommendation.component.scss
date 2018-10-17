@@ -1,8 +1,11 @@
 @import 'main';
 
+
+/* Container */
 .container { height: 90vh; }
 
 
+/* Headline */
 .headline {
   h1 {
     font-family: $font-nunito-bold;
@@ -17,6 +20,8 @@
   }
 }
 
+
+/* Media and Media Body */
 .media {
 
   @media (max-width: 575px) {

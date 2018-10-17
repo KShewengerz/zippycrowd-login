@@ -3,7 +3,7 @@ An Angular 6 application that demos ZippyCrowd sample Login UI Screen
 
 
 #### Main Dev Tools used:
-`Angular 6, Angular CLI, Bootstrap 4, SCSS, Typescript, ES5`
+`Angular 6, Angular CLI, Bootstrap 4, SCSS, Typescript, ES5, Compodoc`
 
 #### Clone the project
 ` $ https://github.com/KShewengerz/zippycrowd-login`

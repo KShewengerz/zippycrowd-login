@@ -1,4 +1,4 @@
-
+/* Buttons */
 button {
   padding-top: 0.7rem;
   padding-bottom: 0.7rem;
@@ -10,6 +10,7 @@ button {
   }
 }
 
+/* Input Media Query */
 @media (max-width: 768px) {
   input.form-control, .input-group { height: 50px; }
 }

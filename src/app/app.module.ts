@@ -6,6 +6,9 @@ import { HomeModule } from '@app/home/home.module';
 import { AppComponent } from '@app/app.component';
 
 
+/**
+ * A root module that holds the initial load of the application
+ */
 @NgModule({
   declarations: [
     AppComponent,

@@ -2,6 +2,7 @@
 @import './helpers/placeholders';
 
 
+/* Form Control */
 input.form-control {
   @extend %shadow-bordered-input;
 
@@ -13,6 +14,7 @@ input.form-control {
   }
 }
 
+/* Input Group */
 .input-group {
 
   @extend %shadow-bordered-input;

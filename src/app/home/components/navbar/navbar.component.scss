@@ -1,6 +1,22 @@
 @import 'main';
 
 
+/* Navbar */
+@media (max-width: 767px) {
+  .navbar-toggler {
+    position: relative;
+    top: 5px;
+  }
+
+  ul {
+    margin-right: 3px;
+
+    li:last-child { display: none; }
+
+    li:nth-child(3) { margin-right: 0 !important; }
+  }
+}
+
 .toggler {
   background-color: #f0f5f9;
   border-color: #f0f5f9 !important;
@@ -21,6 +37,12 @@
   }
 }
 
+.toggler-icon-container {
+  @extend .toggler;
+}
+
+
+/* List Items */
 li {
   a.nav-link { font-size: 12px; }
 
@@ -29,25 +51,8 @@ li {
   .toggler-icon-container { width: 34px; }
 }
 
-.toggler-icon-container {
-  @extend .toggler;
-}
 
-@media (max-width: 767px) {
-  .navbar-toggler {
-    position: relative;
-    top: 5px;
-  }
-
-  ul {
-    margin-right: 3px;
-
-    li:last-child { display: none; }
-
-    li:nth-child(3) { margin-right: 0 !important; }
-  }
-}
-
+/* Buttons */
 button {
   font-family: $font-nunito-bold;;
   font-size: 0.6em !important;
