@@ -1,7 +1,7 @@
 # ZippyCrowd Login Screen
 An Angular 6 application that demos ZippyCrowd sample Login UI Screen
 
-![Landing Page](https://github.com/KShewengerz/zippycrowd-login/tree/master/src/assets/images/landing-screen.png)
+![Landing Page](https://github.com/KShewengerz/zippycrowd-login/blob/master/src/assets/images/landing-screen.png)
 
 
 
